@@ -15,6 +15,7 @@ class EasyViewController: UIViewController {
     let maxHp = Int.random(in: 30 ..< 50) //0から9までで整数(Int)の乱数
     
     var playTrainingTimes:[Int] = []
+    var playTrainingMenus:[String] = []
     
     var secondRemainHp = 0
     
@@ -54,13 +55,13 @@ class EasyViewController: UIViewController {
             
         }
         
-        //トレーニング回数を配列に保存
+        //行ったトレーニング回数を配列に保存
         playTrainingTimes.append(randomTraningTimes)
         
         
-        print(playTrainingTimes)
+//        print(playTrainingTimes)
         
-        //トレーニング回数を表示
+        //トレーニング回数を画面に表示
         traningTimes.text = String(randomTraningTimes)
         
         
@@ -70,6 +71,10 @@ class EasyViewController: UIViewController {
         //トレーニングメニュー配列からランダムに取り出す
         let traningMenus = ["腕立て伏せ", "腹筋", "スクワット", "懸垂"]
         let randomTraningMenu = traningMenus.randomElement()
+        
+        //行ったトレーニングメニューを配列に保存
+        playTrainingMenus.append(randomTraningMenu!)
+//        print(playTrainingMenus)
         
         traningName.text = String(randomTraningMenu!)
 
