@@ -1,5 +1,5 @@
 //
-//  EasyViewController.swift
+//  EasyResultViewController.swift
 //  NokinBattleTraining
 //
 //  Created by 野口晃 on 2020/07/23.
@@ -8,32 +8,33 @@
 
 import UIKit
 
-class EasyViewController: UIViewController {
-
-    var count = 5
+class EasyResultViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
+    
+    var count2 = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        label.text = String(count2)
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func back(_ sender: Any) {
-        
         dismiss(animated: true, completion: nil)
         
     }
     
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let nextVC = segue.destination as! EasyResultViewController
-        
-        nextVC.count2 = count
-        
-        
-        
-        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
- 
-    
+    */
+
 }

@@ -10,6 +10,8 @@
 		E92096B524C9A6D900F3DA7F /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92096B424C9A6D900F3DA7F /* EasyViewController.swift */; };
 		E92096B724C9A90600F3DA7F /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92096B624C9A90600F3DA7F /* NormalViewController.swift */; };
 		E92096B924C9AD1400F3DA7F /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92096B824C9AD1400F3DA7F /* HardViewController.swift */; };
+		E92096BB24C9B27800F3DA7F /* HardResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92096BA24C9B27800F3DA7F /* HardResultViewController.swift */; };
+		E92096BD24C9B2B500F3DA7F /* EasyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92096BC24C9B2B500F3DA7F /* EasyResultViewController.swift */; };
 		E9D74B3024C9838F007236ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D74B2F24C9838F007236ED /* AppDelegate.swift */; };
 		E9D74B3224C9838F007236ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D74B3124C9838F007236ED /* SceneDelegate.swift */; };
 		E9D74B3424C9838F007236ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D74B3324C9838F007236ED /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 		E92096B424C9A6D900F3DA7F /* EasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
 		E92096B624C9A90600F3DA7F /* NormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
 		E92096B824C9AD1400F3DA7F /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
+		E92096BA24C9B27800F3DA7F /* HardResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardResultViewController.swift; sourceTree = "<group>"; };
+		E92096BC24C9B2B500F3DA7F /* EasyResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyResultViewController.swift; sourceTree = "<group>"; };
 		E9D74B2C24C9838F007236ED /* NokinBattleTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NokinBattleTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D74B2F24C9838F007236ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D74B3124C9838F007236ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				E92096B424C9A6D900F3DA7F /* EasyViewController.swift */,
 				E92096B624C9A90600F3DA7F /* NormalViewController.swift */,
 				E92096B824C9AD1400F3DA7F /* HardViewController.swift */,
+				E92096BC24C9B2B500F3DA7F /* EasyResultViewController.swift */,
+				E92096BA24C9B27800F3DA7F /* HardResultViewController.swift */,
 				E9D74B3524C9838F007236ED /* Main.storyboard */,
 				E9D74B3824C9839D007236ED /* Assets.xcassets */,
 				E9D74B3A24C9839D007236ED /* LaunchScreen.storyboard */,
@@ -148,11 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92096B524C9A6D900F3DA7F /* EasyViewController.swift in Sources */,
+				E92096BD24C9B2B500F3DA7F /* EasyResultViewController.swift in Sources */,
 				E9D74B3424C9838F007236ED /* ViewController.swift in Sources */,
 				E9D74B3024C9838F007236ED /* AppDelegate.swift in Sources */,
 				E92096B724C9A90600F3DA7F /* NormalViewController.swift in Sources */,
 				E9D74B3224C9838F007236ED /* SceneDelegate.swift in Sources */,
 				E92096B924C9AD1400F3DA7F /* HardViewController.swift in Sources */,
+				E92096BB24C9B27800F3DA7F /* HardResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
