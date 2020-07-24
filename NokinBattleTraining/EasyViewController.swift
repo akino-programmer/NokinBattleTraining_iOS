@@ -12,10 +12,17 @@ class EasyViewController: UIViewController {
 
     var count = 5
     
+    let maxHp = Int.random(in: 30 ..< 50) //0から9までで整数(Int)の乱数
+    
+    @IBOutlet weak var monsterMaxHp: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+      
     }
     
     @IBAction func back(_ sender: Any) {
