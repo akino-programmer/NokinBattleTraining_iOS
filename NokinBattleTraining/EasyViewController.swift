@@ -9,8 +9,6 @@
 import UIKit
 
 class EasyViewController: UIViewController {
-
-    var count = 5
     
     let maxHp = Int.random(in: 30 ..< 50) //0から9までで整数(Int)の乱数
     
@@ -128,7 +126,6 @@ class EasyViewController: UIViewController {
         }
         
         nextVC.trainingEasyResultMenuTime = trainingResultMenuTime
-        nextVC.count2 = count
         
         
         

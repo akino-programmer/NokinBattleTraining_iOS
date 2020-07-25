@@ -16,9 +16,7 @@ class EasyResultViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var resultTableList: UITableView!
     
-    
-    var count2 = 0
-    
+        
     var trainingEasyResultMenuTime:[String] = []
 
     
@@ -26,7 +24,6 @@ class EasyResultViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = String(count2)
 
     }
     // テーブルの行数を指定するメソッド
@@ -55,6 +52,18 @@ class EasyResultViewController: UIViewController, UITableViewDataSource, UITable
         dismiss(animated: true, completion: nil)
         
     }
+    
+    
+    
+    @IBAction func top(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+
+        
+    }
+    
+    
+    
+    
     
 
 }
