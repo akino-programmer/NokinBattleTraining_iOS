@@ -76,12 +76,9 @@ class EasyViewController: UIViewController {
         playTrainingMenus.append(randomTraningMenu!)
 //        print(playTrainingMenus)
         
+        //トレーニングメニューを画面に表示
         traningName.text = String(randomTraningMenu!)
 
-        
-
-        
-        
         
     }
     
@@ -103,6 +100,34 @@ class EasyViewController: UIViewController {
         
         let nextVC = segue.destination as! EasyResultViewController
         
+        
+        var trainingResultMenu:[String] = []
+        var i = 1
+        var trainingResultTime:[String] = []
+        
+        var trainingResultMenuTime:[String] = []
+        
+        for value in playTrainingMenus {
+            
+            trainingResultMenu.append(String(i) + "." + value + "：")
+            i += 1
+            
+        }
+        
+        
+        for value in playTrainingTimes {
+                   
+            trainingResultTime.append(String(value) + "回")
+                   
+        }
+
+        for (word, number) in zip(trainingResultMenu, trainingResultTime) {
+            print("\(word) \(number)")
+            trainingResultMenuTime.append("\(word) \(number)")
+
+        }
+        
+        nextVC.trainingEasyResultMenuTime = trainingResultMenuTime
         nextVC.count2 = count
         
         
