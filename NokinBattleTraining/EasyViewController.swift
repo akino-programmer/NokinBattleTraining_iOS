@@ -40,28 +40,39 @@ class EasyViewController: UIViewController {
         
         let randomTraningTimes = Int.random(in: 10 ..< 20) //10から20までで整数(Int)の乱数
         
+        
         if (monsterRemainHp.text == "ー"){
-            
+            //１回目のスタート
          monsterMaxHp.text = String(maxHp)
          monsterRemainHp.text = String(maxHp)
         
         } else {
-            
+            //２回目以降のスタート
             secondRemainHp = Int(monsterRemainHp.text!)! - (playTrainingTimes.last!)
             
             monsterRemainHp.text = String(secondRemainHp)
+            
+            if (secondRemainHp <= 0){
+                
+                monsterRemainHp.text = String(0)
+                
+            }
+            
+            
             
         }
         
         //行ったトレーニング回数を配列に保存
         playTrainingTimes.append(randomTraningTimes)
         
-        
 //        print(playTrainingTimes)
         
         //トレーニング回数を画面に表示
         traningTimes.text = String(randomTraningTimes)
         
+        if (monsterRemainHp.text == String(0)){
+           playTrainingTimes.removeLast()
+        }
         
         
         
@@ -70,12 +81,20 @@ class EasyViewController: UIViewController {
         let traningMenus = ["腕立て伏せ", "腹筋", "スクワット", "懸垂"]
         let randomTraningMenu = traningMenus.randomElement()
         
-        //行ったトレーニングメニューを配列に保存
+      
+         //行ったトレーニングメニューを配列に保存
         playTrainingMenus.append(randomTraningMenu!)
-//        print(playTrainingMenus)
-        
+        // print(playTrainingMenus)
+                
+               
+                
         //トレーニングメニューを画面に表示
         traningName.text = String(randomTraningMenu!)
+        
+        if (monsterRemainHp.text == String(0)){
+           playTrainingMenus.removeLast()
+        }
+       
 
         
     }
@@ -86,7 +105,7 @@ class EasyViewController: UIViewController {
     
     
     
-    
+    //Topへ戻る
     @IBAction func back(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
@@ -94,6 +113,7 @@ class EasyViewController: UIViewController {
     }
     
     
+    //リザルト画面へ遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let nextVC = segue.destination as! EasyResultViewController
@@ -112,24 +132,18 @@ class EasyViewController: UIViewController {
             
         }
         
-        
         for value in playTrainingTimes {
                    
             trainingResultTime.append(String(value) + "回")
-                   
         }
 
         for (word, number) in zip(trainingResultMenu, trainingResultTime) {
             print("\(word) \(number)")
             trainingResultMenuTime.append("\(word) \(number)")
-
         }
         
         nextVC.trainingEasyResultMenuTime = trainingResultMenuTime
-        
-        
-        
-        
+       
     }
  
     
