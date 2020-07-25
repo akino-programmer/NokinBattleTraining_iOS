@@ -72,6 +72,8 @@ class EasyViewController: UIViewController {
         
         if (monsterRemainHp.text == String(0)){
            playTrainingTimes.removeLast()
+            traningTimes.text = String("WIN")
+
         }
         
         
@@ -93,6 +95,7 @@ class EasyViewController: UIViewController {
         
         if (monsterRemainHp.text == String(0)){
            playTrainingMenus.removeLast()
+            traningName.text = String("YOU")
         }
        
 
@@ -127,7 +130,7 @@ class EasyViewController: UIViewController {
         
         for value in playTrainingMenus {
             
-            trainingResultMenu.append(String(i) + "." + value + "：")
+            trainingResultMenu.append(String(i) + ".  " + value + "：")
             i += 1
             
         }
