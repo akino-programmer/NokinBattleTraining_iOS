@@ -141,7 +141,7 @@ class NormalViewController: UIViewController {
             }
 
             for (word, number) in zip(trainingResultMenu, trainingResultTime) {
-                print("\(word) \(number)")
+//                print("\(word) \(number)")
                 trainingResultMenuTime.append("\(word) \(number)")
             }
             
