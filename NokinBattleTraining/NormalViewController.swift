@@ -10,7 +10,7 @@ import UIKit
 
 class NormalViewController: UIViewController {
 
-    let maxHp = Int.random(in: 30 ..< 50) //0から9までで整数(Int)の乱数
+    let maxHp = Int.random(in: 50 ..< 75) //0から9までで整数(Int)の乱数
         
         var playTrainingTimes:[Int] = []
         var playTrainingMenus:[String] = []
@@ -38,7 +38,7 @@ class NormalViewController: UIViewController {
         
         @IBAction func trainingStart(_ sender: Any) {
             
-            let randomTraningTimes = Int.random(in: 10 ..< 20) //10から20までで整数(Int)の乱数
+            let randomTraningTimes = Int.random(in: 15 ..< 20) //10から20までで整数(Int)の乱数
             
             
             if (monsterRemainHp.text == "ー"){

@@ -10,7 +10,7 @@ import UIKit
 
 class HardViewController: UIViewController {
 
-    let maxHp = Int.random(in: 30 ..< 50) //0から9までで整数(Int)の乱数
+    let maxHp = Int.random(in: 75 ..< 100) //0から9までで整数(Int)の乱数
             
             var playTrainingTimes:[Int] = []
             var playTrainingMenus:[String] = []
@@ -25,12 +25,13 @@ class HardViewController: UIViewController {
             
             @IBOutlet weak var traningTimes: UILabel!
             
-            
+            @IBOutlet weak var resultButton: UIButton!
+    
             override func viewDidLoad() {
                 super.viewDidLoad()
 
-              
-
+//            resultButton.isHidden = true
+            resultButton.isEnabled = false
                 
               
             }
@@ -38,7 +39,7 @@ class HardViewController: UIViewController {
             
             @IBAction func trainingStart(_ sender: Any) {
                 
-                let randomTraningTimes = Int.random(in: 10 ..< 20) //10から20までで整数(Int)の乱数
+                let randomTraningTimes = Int.random(in: 15 ..< 25) //10から20までで整数(Int)の乱数
                 
                 
                 if (monsterRemainHp.text == "ー"){
@@ -55,7 +56,8 @@ class HardViewController: UIViewController {
                     if (secondRemainHp <= 0){
                         
                         monsterRemainHp.text = String(0)
-                        
+//                        resultButton.isHidden = false
+                        resultButton.isEnabled = true
                     }
                     
                     

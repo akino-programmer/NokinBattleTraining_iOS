@@ -93,6 +93,10 @@
                                     <segue destination="2sU-Qq-NdB" kind="presentation" modalPresentationStyle="fullScreen" id="Nev-l0-HrD"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maintitle2ver3" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-Pk-R9U">
+                                <rect key="frame" x="20" y="65" width="374" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -509,6 +513,7 @@
                     <connections>
                         <outlet property="monsterMaxHp" destination="aLd-lm-gjf" id="va9-xT-V86"/>
                         <outlet property="monsterRemainHp" destination="Fkt-ZZ-RFG" id="WZP-cW-h1U"/>
+                        <outlet property="resultButton" destination="Gc5-Jm-5Xw" id="7GW-zW-9bI"/>
                         <outlet property="traningName" destination="joq-Nz-gDP" id="VEV-Ho-ADG"/>
                         <outlet property="traningTimes" destination="PQG-GU-9po" id="l2W-FJ-XlT"/>
                     </connections>
@@ -892,6 +897,7 @@
     <resources>
         <image name="easymonster" width="994" height="935"/>
         <image name="hardmonster" width="994" height="935"/>
+        <image name="maintitle2ver3" width="560" height="100"/>
         <image name="normalmonster" width="994" height="935"/>
         <image name="roomlayout" width="600" height="800"/>
         <image name="roomlayout2" width="600" height="800"/>
