@@ -17,6 +17,8 @@ class NormalViewController: UIViewController {
         
         var secondRemainHp = 0
         
+        @IBOutlet weak var resultButton: UIButton!
+    
         @IBOutlet weak var traningName: UILabel!
         
         @IBOutlet weak var monsterMaxHp: UILabel!
@@ -30,7 +32,8 @@ class NormalViewController: UIViewController {
             super.viewDidLoad()
 
           
-
+            resultButton.alpha=0.3
+            resultButton.isEnabled = false
             
           
         }
@@ -55,7 +58,8 @@ class NormalViewController: UIViewController {
                 if (secondRemainHp <= 0){
                     
                     monsterRemainHp.text = String(0)
-                    
+                    resultButton.alpha=1
+                    resultButton.isEnabled = true
                 }
                 
                 

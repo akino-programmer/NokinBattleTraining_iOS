@@ -29,10 +29,11 @@ class HardViewController: UIViewController {
     
             override func viewDidLoad() {
                 super.viewDidLoad()
+//            resultButton.backgroundColor = UIColor.gray
 
-            resultButton.isHidden = true
-            resultButton.isEnabled = false
-                
+//            resultButton.isHidden = true
+                resultButton.alpha=0.3
+                resultButton.isEnabled = false
               
             }
             
@@ -56,7 +57,7 @@ class HardViewController: UIViewController {
                     if (secondRemainHp <= 0){
                         
                         monsterRemainHp.text = String(0)
-                        resultButton.isHidden = false
+                        resultButton.alpha=1
                         resultButton.isEnabled = true
                     }
                     

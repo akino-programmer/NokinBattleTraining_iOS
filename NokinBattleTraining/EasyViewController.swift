@@ -25,12 +25,15 @@ class EasyViewController: UIViewController {
     
     @IBOutlet weak var traningTimes: UILabel!
     
+    @IBOutlet weak var resultButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
       
-
+        resultButton.alpha=0.3
+        resultButton.isEnabled = false
+                  
         
       
     }
@@ -55,7 +58,8 @@ class EasyViewController: UIViewController {
             if (secondRemainHp <= 0){
                 
                 monsterRemainHp.text = String(0)
-                
+                resultButton.alpha=1
+                resultButton.isEnabled = true
             }
             
             
