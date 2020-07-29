@@ -26,6 +26,7 @@ class HardViewController: UIViewController {
             @IBOutlet weak var traningTimes: UILabel!
             
             @IBOutlet weak var resultButton: UIButton!
+            @IBOutlet weak var backButton: UIButton!
     
             override func viewDidLoad() {
                 super.viewDidLoad()
@@ -34,7 +35,8 @@ class HardViewController: UIViewController {
 //            resultButton.isHidden = true
                 resultButton.alpha=0.3
                 resultButton.isEnabled = false
-              
+                resultButton.layer.cornerRadius = 10.0
+                backButton.layer.cornerRadius = 10.0
             }
             
             

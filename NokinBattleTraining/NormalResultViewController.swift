@@ -19,11 +19,14 @@ class NormalResultViewController: UIViewController, UITableViewDataSource, UITab
         
     var trainingNormalResultMenuTime:[String] = []
 
+    @IBOutlet weak var backButton: UIButton!
     
-
+    @IBOutlet weak var topButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        topButton.layer.cornerRadius = 10.0
+        backButton.layer.cornerRadius = 10.0
 
     }
     // テーブルの行数を指定するメソッド

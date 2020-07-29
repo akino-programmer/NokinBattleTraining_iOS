@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var easyButton: UIButton!
+    
+    @IBOutlet weak var normalButton: UIButton!
+    
+    @IBOutlet weak var hardButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        easyButton.layer.cornerRadius = 10.0
+        normalButton.layer.cornerRadius = 10.0
+        hardButton.layer.cornerRadius = 10.0
     }
 
 

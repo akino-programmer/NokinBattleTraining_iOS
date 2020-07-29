@@ -101,6 +101,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="easyButton" destination="Ghg-Lw-CRr" id="1FT-4U-WyX"/>
+                        <outlet property="hardButton" destination="ATR-EQ-1OG" id="GG4-eH-yer"/>
+                        <outlet property="normalButton" destination="0qN-1s-OzJ" id="THX-gi-5ah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,6 +258,7 @@
                         <viewLayoutGuide key="safeArea" id="cEj-Ol-fnt"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="1vV-DQ-Z7q" id="H5G-uX-drp"/>
                         <outlet property="monsterMaxHp" destination="9br-du-hcl" id="L4g-84-VYX"/>
                         <outlet property="monsterRemainHp" destination="Ske-Vw-vKd" id="PpN-P2-uSN"/>
                         <outlet property="resultButton" destination="KrU-j3-mq5" id="83a-W5-vCC"/>
@@ -366,7 +372,9 @@
                         <viewLayoutGuide key="safeArea" id="RQc-cK-DcS"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="KRK-VT-laQ" id="s6t-vK-I2n"/>
                         <outlet property="resultTableList" destination="98g-uz-kYb" id="v00-jD-j3Y"/>
+                        <outlet property="topButton" destination="SOh-1C-i1O" id="RkH-PY-c2K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lK6-D4-ctz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -523,6 +531,7 @@
                         <viewLayoutGuide key="safeArea" id="FSK-tt-kBK"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="nBj-RB-Y7B" id="lr9-wX-tzF"/>
                         <outlet property="monsterMaxHp" destination="aLd-lm-gjf" id="va9-xT-V86"/>
                         <outlet property="monsterRemainHp" destination="Fkt-ZZ-RFG" id="WZP-cW-h1U"/>
                         <outlet property="resultButton" destination="Gc5-Jm-5Xw" id="7GW-zW-9bI"/>
@@ -682,6 +691,7 @@
                         <viewLayoutGuide key="safeArea" id="HiV-4Q-ieM"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="2et-kJ-Ywo" id="Z9d-YJ-IED"/>
                         <outlet property="monsterMaxHp" destination="Xmj-ew-Lim" id="pcK-bO-CkG"/>
                         <outlet property="monsterRemainHp" destination="oBN-wP-DV8" id="ASF-sv-Ap8"/>
                         <outlet property="resultButton" destination="0L1-nC-8Mh" id="R41-Vs-3r6"/>
@@ -795,7 +805,9 @@
                         <viewLayoutGuide key="safeArea" id="o2j-Nl-wXa"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="vEA-xZ-6c6" id="TL6-wd-vlw"/>
                         <outlet property="resultTableList" destination="ZI1-CN-vnC" id="Sok-3R-RJi"/>
+                        <outlet property="topButton" destination="qVd-0L-dYM" id="jUo-5z-GWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ6-UI-kQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -904,7 +916,9 @@
                         <viewLayoutGuide key="safeArea" id="Zg1-tB-6wO"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="PoQ-Py-drT" id="T4f-qW-Cez"/>
                         <outlet property="resultTableList" destination="ecc-w6-nTd" id="cKQ-KD-pO5"/>
+                        <outlet property="topButton" destination="brY-3v-lox" id="kHe-4S-s9x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COh-tB-SQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

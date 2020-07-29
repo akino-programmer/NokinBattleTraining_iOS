@@ -16,7 +16,9 @@ class HardResultViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var resultTableList: UITableView!
     
-        
+    @IBOutlet weak var backButton: UIButton!
+    
+    @IBOutlet weak var topButton: UIButton!
     var trainingHardResultMenuTime:[String] = []
 
     
@@ -24,6 +26,8 @@ class HardResultViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        topButton.layer.cornerRadius = 10.0
+        backButton.layer.cornerRadius = 10.0
 
     }
     // テーブルの行数を指定するメソッド

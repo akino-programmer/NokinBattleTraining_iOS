@@ -17,6 +17,8 @@ class NormalViewController: UIViewController {
         
         var secondRemainHp = 0
         
+    @IBOutlet weak var backButton: UIButton!
+    
         @IBOutlet weak var resultButton: UIButton!
     
         @IBOutlet weak var traningName: UILabel!
@@ -34,7 +36,8 @@ class NormalViewController: UIViewController {
           
             resultButton.alpha=0.3
             resultButton.isEnabled = false
-            
+            resultButton.layer.cornerRadius = 10.0
+            backButton.layer.cornerRadius = 10.0
           
         }
         
