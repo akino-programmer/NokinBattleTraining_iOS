@@ -10,7 +10,7 @@ import UIKit
 
 class HardViewController: UIViewController {
 
-    let maxHp = Int.random(in: 75 ..< 100) //0から9までで整数(Int)の乱数
+    let maxHp = Int.random(in: 85 ..< 125) //0から9までで整数(Int)の乱数
             
             var playTrainingTimes:[Int] = []
             var playTrainingMenus:[String] = []
