@@ -366,6 +366,15 @@
                                     <action selector="top:" destination="yak-3e-6qB" eventType="touchUpInside" id="Oxf-LR-ADK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKp-em-xkc">
+                                <rect key="frame" x="152" y="780" width="106" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="つぶやく">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -373,6 +382,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="KRK-VT-laQ" id="s6t-vK-I2n"/>
+                        <outlet property="goTwitterButton" destination="RKp-em-xkc" id="dJY-bC-bgB"/>
                         <outlet property="resultTableList" destination="98g-uz-kYb" id="v00-jD-j3Y"/>
                         <outlet property="topButton" destination="SOh-1C-i1O" id="RkH-PY-c2K"/>
                     </connections>
