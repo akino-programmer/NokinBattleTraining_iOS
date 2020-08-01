@@ -23,11 +23,13 @@ class NormalResultViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var topButton: UIButton!
     
+    @IBOutlet weak var goTwitterButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         topButton.layer.cornerRadius = 10.0
         backButton.layer.cornerRadius = 10.0
-
+        goTwitterButton.layer.cornerRadius = 10.0
     }
     // テーブルの行数を指定するメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

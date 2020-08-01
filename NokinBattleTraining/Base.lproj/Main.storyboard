@@ -809,6 +809,15 @@
                                     <action selector="top:" destination="5K1-vj-XDG" eventType="touchUpInside" id="VNE-4b-Pew"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQh-n9-6to">
+                                <rect key="frame" x="150" y="785" width="106" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="つぶやく">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -816,6 +825,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="vEA-xZ-6c6" id="TL6-wd-vlw"/>
+                        <outlet property="goTwitterButton" destination="PQh-n9-6to" id="s6k-sA-Ykk"/>
                         <outlet property="resultTableList" destination="ZI1-CN-vnC" id="Sok-3R-RJi"/>
                         <outlet property="topButton" destination="qVd-0L-dYM" id="jUo-5z-GWM"/>
                     </connections>
@@ -920,6 +930,15 @@
                                     <action selector="top:" destination="q6h-kG-J6h" eventType="touchUpInside" id="Ih7-tj-j9b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fev-SV-0gd">
+                                <rect key="frame" x="151" y="783" width="106" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="つぶやく">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -927,6 +946,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="PoQ-Py-drT" id="T4f-qW-Cez"/>
+                        <outlet property="goTwitterButton" destination="fev-SV-0gd" id="sif-2C-dXJ"/>
                         <outlet property="resultTableList" destination="ecc-w6-nTd" id="cKQ-KD-pO5"/>
                         <outlet property="topButton" destination="brY-3v-lox" id="kHe-4S-s9x"/>
                     </connections>

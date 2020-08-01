@@ -19,6 +19,9 @@ class HardResultViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var backButton: UIButton!
     
     @IBOutlet weak var topButton: UIButton!
+    
+    @IBOutlet weak var goTwitterButton: UIButton!
+    
     var trainingHardResultMenuTime:[String] = []
 
     
@@ -28,7 +31,7 @@ class HardResultViewController: UIViewController, UITableViewDataSource, UITable
         
         topButton.layer.cornerRadius = 10.0
         backButton.layer.cornerRadius = 10.0
-
+        goTwitterButton.layer.cornerRadius = 10.0
     }
     // テーブルの行数を指定するメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
